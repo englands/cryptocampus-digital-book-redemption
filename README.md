@@ -2,7 +2,7 @@
 
 CryptoCampus is a decentralized application (DApp) that allows users to redeem digital books using an ERC20 token (BOOK). Built with a sleek, OpenSea-inspired dark mode UI, it provides a seamless bridge between blockchain assets and digital content consumption.
 
-[aureliabutton]
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https%3A%2F%2Fgithub.com%2Fenglands%2Fcryptocampus-digital-book-redemption)
 
 ## 🌟 Overview
 
@@ -91,7 +91,7 @@ bun run deploy
 ### One-Click Deploy
 You can deploy your own instance of CryptoCampus directly to Cloudflare using the button below:
 
-[aureliabutton]
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https%3A%2F%2Fgithub.com%2Fenglands%2Fcryptocampus-digital-book-redemption)
 
 ---
 
