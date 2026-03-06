@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    /* Premium OpenSea-inspired Dark Palette */
+    --background: 0 0% 7%;      /* #121212 - Deep Charcoal */
+    --foreground: 0 0% 100%;
+    --card: 0 0% 12%;           /* #1e1e1e - Elevated Charcoal */
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 9%;         /* #171717 */
+    --popover-foreground: 0 0% 100%;
+    --primary: 173 80% 40%;    /* Vibrant Teal #14B8A6 */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 16%;      /* #292929 */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 15%;          /* #262626 */
+    --muted-foreground: 0 0% 65%;
+    --accent: 0 0% 20%;         /* #333333 */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 18%;         /* #2e2e2e */
+    --input: 0 0% 18%;
+    --ring: 173 80% 40%;
+    --radius: 1rem;
+  }
+  .dark {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 100%;
+    --primary: 173 80% 40%;
+    --primary-foreground: 0 0% 100%;
+  }
+  * {
+    @apply border-border;
+  }
+  html, body, #root {
+    height: 100%;
+    @apply bg-background text-foreground selection:bg-teal-500/30;
+  }
+  body {
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    -webkit-font-smoothing: antialiased;
+  }
+}
+@layer components {
+  .glass-panel {
+    @apply bg-white/[0.03] backdrop-blur-xl border border-white/10 shadow-2xl;
+  }
+  .glass-card {
+    @apply bg-white/[0.02] backdrop-blur-md border border-white/5 hover:border-white/10 transition-all duration-300;
+  }
+  .btn-premium {
+    @apply relative overflow-hidden bg-teal-600 hover:bg-teal-500 text-white font-bold py-3 px-8 rounded-2xl transition-all active:scale-95 shadow-lg shadow-teal-500/20 hover:shadow-teal-500/40;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500;
+  }
+}
